@@ -24,7 +24,7 @@
         <li>Erstellen Sie eine neue Instanz der Gruppensteuerung.</li>
         <li>Fügen Sie in der Kategorie "devices" Variablen oder Links zu Variablen hinzu, welche geschaltet werden sollen. <small><a href="#devices">Siehe "devices"</a>)</small></li>
         <li>Klicken Sie in der Instanz-Konfiguration auf "Geräte aktualisieren".</li>
-        <li>Verlinken Sie die Variable "Ergebnis Boolean" mit der Weboberfläche um alle Geräte Ein- und Auszuschalten. bzw. den Status der geräte zu sehen.</li>
+        <li>Verlinken Sie die Variable "Ergebnis Boolean" oder "Ergebnis Float" mit der Weboberfläche um alle Geräte Ein- und Auszuschalten. bzw. den Status der geräte zu sehen.</li>
     </ul>
 
     <hr />
@@ -38,7 +38,15 @@
     </p>
     <p>Kann über die Weboberfläche gesetzt werden und schaltet damit alle Verbraucher aus oder ein.</p>
     
+    <h3>Ergebnis Float (~Intensity.1)</h3>
+    <p>
+        Es wird der höchste Wert aller aktiven Geräte angezeigt. Falls Geräte mit Boolean (Ein/Aus) vorhanden sind, steht der Wert bei aktiven Geräten auf 100 % und deaktivierten geräten auf 0 %
+    </p>
+    <p>Kann über die Weboberfläche gesetzt werden und schaltet damit alle Verbraucher auf einen bestimmten Wert. Geräte mit Boolean-Wert (Ein/Aus) werden bei einem Wert > 0 % eingeschaltet und bei = 0 % ausgeschaltet. Alle anderen Geräte werden auf den entsprechenden Wert gesetzt.</p>
+
     <hr />
+
+
 
     <h1>Kategorien</h1>
     <a name="devices"></a><h3>devices</h3>
