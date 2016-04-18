@@ -1,0 +1,93 @@
+{
+  "elements": [
+    {
+      "type": "ValidationTextBox",
+      "name": "GroupName",
+      "caption": "Gruppe"
+    },
+    {
+      "type": "Select",
+      "name": "AlertMode",
+      "caption": "Modus",
+      "options": [
+        {
+          "label": "Normal",
+          "value": 0
+        },
+        {
+          "label": "24 Stunden",
+          "value": 1
+        },
+        {
+          "label": "Technik",
+          "value": 2
+        },
+        {
+          "label": "Feuer",
+          "value": 3
+        },
+        {
+          "label": "Sabotage",
+          "value": 4
+        }
+
+      ]
+    },
+    {
+      "type": "Select",
+      "name": "AlertTarget",
+      "caption": "Ziel",
+      "options": [
+        {
+          "label": "Lokaler Alarm",
+          "value": 0
+        },
+        {
+          "label": "Stiller Alarm",
+          "value": 1
+        },
+        {
+          "label": "Nur Protokollierung",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "Label",
+      "label": "Eingangsverzögerung"
+    },
+    {
+      "type": "IntervalBox",
+      "name": "AlertDelay",
+      "caption": "Sekunden"
+    },
+    {
+      "type": "Label",
+      "label": "Ausgangsverzögerung"
+    },
+    {
+      "type": "IntervalBox",
+      "name": "ActiveDelay",
+      "caption": "Sekunden"
+    }
+  ],
+      "actions": [
+        {
+          "type": "Button",
+          "label": "Ereignisse aktualisieren",
+          "onClick": "SXAlertZone_UpdateEvents($id);"
+        }
+      ],
+      "status": [
+        {
+          "code": 102,
+          "icon": "active",
+          "caption": "OK"
+        },
+        {
+          "code": 201,
+          "icon": "error",
+          "caption": "ALARM ausgelöst"
+        }
+      ]
+    }

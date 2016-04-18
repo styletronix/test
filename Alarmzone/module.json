@@ -1,0 +1,13 @@
+{
+    "id": "{2C91C0BC-C954-4A91-9A5A-B959634A714C}",
+    "name": "Alarmzone",
+    "type": 3,
+    "vendor": "Styletronix.net",
+  "aliases": [
+    "Alarmzone"
+  ],
+  "parentRequirements": [ "{486EAF6F-466F-4E07-9E89-5CC0FCB4161F}" ],
+    "childRequirements": [],
+    "implemented": ["{E2D049C3-E647-410F-9976-B2DCF5E9A8A6}"],
+    "prefix": "SXAlertZone"
+}

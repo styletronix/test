@@ -1,0 +1,13 @@
+{
+    "id": "{92FD9EAD-2EFC-4D14-BE82-482ED81E1104}",
+    "name": "Alarmanlage",
+    "type": 3,
+    "vendor": "Styletronix.net",
+  "aliases": [
+    "Alarmanlage"
+  ],  
+    "parentRequirements": [],
+    "childRequirements": ["{E2D049C3-E647-410F-9976-B2DCF5E9A8A6}"],
+    "implemented": ["{486EAF6F-466F-4E07-9E89-5CC0FCB4161F}"],
+    "prefix": "SXAlert"
+}
